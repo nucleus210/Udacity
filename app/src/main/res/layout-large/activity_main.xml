@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/FirstView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#212121"
+    tools:context="com.example.jonhsmith.rockeve.MainActivity"
+    tools:layout_editor_absoluteX="99dp"
+    tools:layout_editor_absoluteY="99dp">
+
+    <RelativeLayout
+        android:id="@+id/SecondView"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="1dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:scaleX="1"
+                android:scaleY="1"
+                android:src="@drawable/girlguitar" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@color/transRed">
+
+                <TextView
+                    android:id="@+id/YearText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/new_rocker"
+                    android:textStyle="bold"
+                    android:text="@string/new_year_s_rockin_eve"
+                    android:elevation="4dp"
+                    android:textColor="@color/colorText"
+                    android:textSize="75sp" />
+
+            </FrameLayout>
+        </RelativeLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="144dp"
+            android:layout_centerHorizontal="true"
+            app:cardBackgroundColor="@color/transYellow"
+            app:cardElevation="1dp"
+            android:layout_marginTop="340dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginEnd="21dp"
+                    android:layout_marginStart="21dp"
+                    android:elevation="4dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/YearLogo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/new_rocker"
+                        android:text="@string/Y_2"
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="105sp"
+                        android:textStyle="bold"/>
+
+                    <ImageView
+                        android:id="@+id/logo"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginStart="34dp"
+                        android:layout_marginEnd="34dp"
+                        android:layout_gravity="center_vertical"
+                        android:scaleX="1.4"
+                        android:scaleY="1.4"
+                        android:src="@drawable/logo2"/>
+
+                    <TextView
+                        android:id="@+id/YearLogo2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/new_rocker"
+                        android:text="@string/Y_1_8"
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="105sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rockconcert2"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/transBack">
+
+                    <TextView
+                        android:id="@+id/TextRes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="103dp"
+                        android:layout_marginStart="103dp"
+                        android:elevation="4dp"
+                        android:fontFamily="@font/new_rocker"
+                        android:text="@string/contact_us"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="39sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <ImageView
+                    android:id="@+id/PhoneIco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:scaleX="2"
+                    android:scaleY="2"
+                    android:src="@mipmap/ic_launcher_phone_inverse"/>
+
+                <ImageView
+                    android:id="@+id/MailIco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="144dp"
+                    android:layout_toStartOf="@+id/PhoneIco"
+                    android:scaleX="2"
+                    android:scaleY="2"
+                    android:src="@mipmap/ic_launcher_email_inverse"/>
+
+                <ImageView
+                    android:id="@+id/InfoIco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="144dp"
+                    android:layout_toEndOf="@+id/PhoneIco"
+                    android:scaleX="2"
+                    android:scaleY="2"
+                    android:src="@mipmap/ic_launcher_info"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="89dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/transRed">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/Gift"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:scaleType="fitCenter"
+                            android:scaleX="1"
+                            android:scaleY="1"
+                            android:src="@drawable/gift"/>
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="210dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="5dp"
+                            android:layout_weight="2"
+                            android:fontFamily="@font/new_rocker"
+                            android:text="@string/discount_giftcard"
+                            android:textColor="@color/colorTextBlack"
+                            android:textSize="26sp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+                </FrameLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

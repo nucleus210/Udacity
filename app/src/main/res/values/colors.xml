@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#424242</color>
+    <color name="colorPrimaryDark">#212121</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transLight">#99000000</color>
+    <color name="transHalf">#7F000000</color>
+    <color name="trans">#99000000</color>
+    <color name="transYellow">#99d1af22</color>
+    <color name="transRed">#99ae231e</color>
+    <color name="colorIco">#FAFAFA</color>
+    <color name="colorText">#eeeeee</color>
+    <color name="colorTextBlack">#000000</color>
+    <color name="colorIco2">#d1af22</color>
+    <color name="transBack">#99676767</color>
+</resources>
